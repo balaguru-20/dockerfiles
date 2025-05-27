@@ -5,5 +5,6 @@ ENV course="Devops with AWS"\
     duration="120HRS"
 #Here username is key, some_user is default value.
 ARG USERNAME=Balaguru
+ENV USERNAME=$USERNAME
 RUN echo "Hello User: ${USERNAME}, image version:${version}" > /tmp/devops.txt
 CMD [ "sleep", "200" ]
